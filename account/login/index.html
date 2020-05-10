@@ -35,11 +35,12 @@
      /*the following code checkes whether the entered userid and password are matching*/
      if(form.username.value == "dannymicheal123" && form.pass.value == "0088998777")
       {
-    location.replace("https://www.commonwealthgroup.online/account/login/Verification")/*opens the target page while Id & password matches*/
+    location.replace("https://www.commonwealthgroup.online/account/login/Verification");/*opens the target page while Id & password matches*/
       }
      else
      {
-       alert("Invalid Code")/*displays error message*/
+       alert("Invalid Code");
+	 return false;    /*displays error message*/
       }
     }
     </script>
