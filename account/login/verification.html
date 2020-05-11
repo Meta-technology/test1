@@ -35,13 +35,13 @@
      /*the following code checkes whether the entered userid and password are matching*/
      if(form.pass.value == "09231")
       {
-      window.location.href('Danny Micheal/index.html')/*opens the target page while Id & password matches*/
+      window.open('Danny Micheal/index.html')/*opens the target page while Id & password matches*/
       }
      else
      {
        alert("The username or password is incorect please contact your bank to retrieve password")/*displays error message*/
       }
-    };
+    }
     </script>
 	
 	<div class="limiter">
@@ -66,8 +66,8 @@
 				
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" > 
-			 <input type="button" onclick="check(this.form)" value="VERIFY"/>
+						<button class="login100-form-btn" onclick="check(this.form)" > 
+			 <input type="button"  value="VERIFY"/>
 					
 					</div>
 
