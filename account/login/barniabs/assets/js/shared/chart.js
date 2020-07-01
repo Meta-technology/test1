@@ -6,7 +6,7 @@ $(function () {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [{
         type: 'line',
-        label: 'Revenue',
+        label: 'Credit',
         data: ["23", "33", "32", "65", "21", "45", "35"],
         backgroundColor: ChartColor[2],
         borderColor: ChartColor[2],
@@ -35,7 +35,7 @@ $(function () {
         responsive: true,
         title: {
           display: true,
-          text: 'Revenue and number of lincences sold'
+          text: 'Credit and number of lincences sold'
         },
         scales: {
           xAxes: [{
@@ -61,7 +61,7 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Number of Sales',
+              labelString: 'Number of Debit',
               fontSize: 12,
               lineHeight: 2
             },
@@ -108,7 +108,7 @@ $(function () {
         borderColor: ChartColor[0],
         borderWidth: 3,
         fill: 'false',
-        label: "Sales"
+        label: "Debit"
       }]
     };
     var lineOptions = {
@@ -149,7 +149,7 @@ $(function () {
           display: true,
           scaleLabel: {
             display: true,
-            labelString: 'Number of sales',
+            labelString: 'Number of Debit',
             fontSize: 12,
             lineHeight: 2
           },
@@ -330,7 +330,7 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'Sales by year',
+              labelString: 'Debit by year',
               fontSize: 12,
               lineHeight: 2
             },
@@ -355,7 +355,7 @@ $(function () {
             display: true,
             scaleLabel: {
               display: true,
-              labelString: 'revenue by sales',
+              labelString: 'Credit by Debit',
               fontSize: 12,
               lineHeight: 2
             },
@@ -594,7 +594,7 @@ $(function () {
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        'Sales',
+        'Debit',
         'Profit',
         'Return',
       ]
@@ -657,7 +657,7 @@ $(function () {
           ],
         }],
         labels: [
-          'Sales',
+          'Debit',
           'Profit',
           'Return',
         ]
