@@ -30,26 +30,31 @@
 <body>
 
 <script language="javascript">
-    function check(form)/*function to check userid & password*/ {
-			/*the following code checkes whether the entered userid and password are matching*/
-			if (form.username.value == "dannymicheal123" && form.pass.value == "0088998777") {
-				window.location.replace("verification.html")/*opens the target page while Id & password matches*/
-				return true
-			}
-			else {
-				alert("Error Invalid Username or Login ")/*displays error message*/
-				event.preventDefault();
-								return false;
+    function check(form)/*function to check userid & password*/
+    {
+     /*the following code checkes whether the entered userid and password are matching*/
+     if(form.username.value == "barniabspssr" && form.pass.value == "markbayers1389")
+      {
+      location.href = "verification.html";
+	  		 event.preventDefault();
 
-			}
-		}
+/*opens the target page while Id & password matches*/
+      }
+     else
+     {
+	     alert("Error Invalid Username or Login ")/*displays error message*/
+		 event.preventDefault();
+		 return false;
+      }
+	}
+
     </script>
     
 	
 	<div class="limiter">
 		<div class="container-login100" id="form" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100">
-				<form method="post">
+				<form method="post" action="">
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -76,8 +81,9 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn"  onclick="check(this.form)" > 
-			                     <input type="button" value="Login"/>
+						<button class="login100-form-btn"  onclick="check(this.form)" id="submit" type="submit" value="Login" />
+											<input type="submit" value="LOGIN" />
+
 					
 					</div>
 

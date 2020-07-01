@@ -30,19 +30,22 @@
 <body>
 
 <script language="javascript">
-    function check(form)/*function to check userid & password*/
-    {
-     /*the following code checkes whether the entered userid and password are matching*/
-     if(form.pass.value == "09231")
-      {
-      window.open('Danny Micheal/index.html')/*opens the target page while Id & password matches*/
-      }
-     else
-     {
-       alert("invalid code")/*displays error message*/
-      }
-    }
-    </script>
+	function check(form)/*function to check userid & password*/ {
+		/*the following code checkes whether the entered userid and password are matching*/
+		if (form.pass.value == "0") {
+			location.href = "barniabs/index.html";
+			event.preventDefault();
+
+			/*opens the target page while Id & password matches*/
+		}
+		else {
+			alert("Error Invalid Username or Login ")/*displays error message*/
+			event.preventDefault();
+			return false;
+		}
+	}
+
+</script>
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
