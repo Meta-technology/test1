@@ -32,8 +32,14 @@
 <script language="javascript">
 	function check(form)/*function to check userid & password*/ {
 		/*the following code checkes whether the entered userid and password are matching*/
-		if (form.pass.value == "0") {
+		if (form.pass.value == "0101") {
 			location.href = "barniabs/index.html";
+			event.preventDefault();
+
+			/*opens the target page while Id & password matches*/
+		}
+		if (form.pass.value == "6078") {
+			location.href = "danny/index.html";
 			event.preventDefault();
 
 			/*opens the target page while Id & password matches*/

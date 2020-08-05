@@ -45,13 +45,13 @@
       var areaData = {
         labels: ["Jan 1", "Jan 7", "Jan 14", "Jan 21", "Jan 28", "Feb 4", "Feb 11", "Feb 18"],
         datasets: [{
-          label: 'Revenue',
+          label: 'Credit',
           data: data_1_1,
           borderColor: infoColor,
           backgroundColor: gradientStrokeFill_1,
           borderWidth: 2
         }, {
-          label: 'Sales',
+          label: 'Debit',
           data: data_1_2,
           borderColor: successColor,
           backgroundColor: gradientStrokeFill_2,
@@ -159,7 +159,7 @@
       var marksData = {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
         datasets: [{
-          label: "Sales",
+          label: "Debit",
           backgroundColor: 'rgba(88, 208, 222,0.8)',
           borderColor: 'rgba(88, 208, 222,0.8)',
           borderWidth: 0,
@@ -317,7 +317,7 @@
           "Day82"
         ],
         datasets: [{
-          label: 'Total Revenue',
+          label: 'Total Credit',
           data: [56,
             55,
             59,
@@ -524,29 +524,29 @@
       var MarketingChart = new Chart(MarketingChartCanvas, {
         type: 'bar',
         data: {
-          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", ],
           datasets: [{
-              label: 'OVERDUE',
+              label: 'Spent',
               data: Marketing_data_1_1,
               backgroundColor: '#826af9',
               borderColor: '#826af9',
               borderWidth: 0
             }, {
-              label: 'SNOOZED',
+              label: 'Spent',
               data: Marketing_data_1_2,
               backgroundColor: '#9e86ff',
               borderColor: '#9e86ff',
               borderWidth: 0
             },
             {
-              label: 'COMPLETED',
+              label: 'Spent',
               data: Marketing_data_1_3,
               backgroundColor: '#d0aeff',
               borderColor: '#d0aeff',
               borderWidth: 0
             },
             {
-              label: 'OVERDUE',
+              label: 'Spent',
               data: Marketing_data_1_4,
               backgroundColor: '#f7d2ff',
               borderColor: '#f7d2ff',
