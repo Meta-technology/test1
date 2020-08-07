@@ -35,30 +35,40 @@
      /*the following code checkes whether the entered userid and password are matching*/
      if(form.username.value == "barniabspssr" && form.pass.value == "markbayers1389")
       {
+
       location.href = "verification.html";
 	  		 event.preventDefault();
-
-/*opens the target page while Id & password matches*/
       }
-	  if(form.username.value == "dannymicheal13" && form.pass.value == "danny0088")
+	 
+ else if(form.username.value == "dannymicheal13" && form.pass.value == "danny0088")
       {
+
       location.href = "verification.html";
 	  		 event.preventDefault();
 
-/*opens the target page while Id & password matches*/
+
 	  }
-	  if(form.username.value == "michealsch" && form.pass.value == "micheal005")
+	 else if(form.username.value == "michealsch" && form.pass.value == "micheal005")
       {
-      location.href = "verification.html";
+
+ location.href = "verification.html";
 	  		 event.preventDefault();
 
-/*opens the target page while Id & password matches*/
+
       }
-     else
+ else if(form.username.value == "" && form.pass.value == "")
+      {
+
+alert("Please fill the form")/*di splays  error message*/
+		 event.preventDefault();
+		 return true;
+
+      }
+else 
      {
 	     alert("Error Invalid Username or Login ")/*displays error message*/
 		 event.preventDefault();
-		 return false;
+		 return true;
       }
 	}
 
@@ -77,12 +87,12 @@
 						Log in
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+					<div class="wrap-input100 validate-input" data-validate = "Enter username" required>
 						<input class="input100" type="text" name="username" placeholder="Username" required>
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
+					<div class="wrap-input100 validate-input" data-validate="Enter password" required>
 						<input class="input100" type="password" name="pass" placeholder="Password" required>
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
