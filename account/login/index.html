@@ -40,22 +40,7 @@
 	  		 event.preventDefault();
       }
 	 
- else if(form.username.value == "dannymicheal13" && form.pass.value == "danny0088")
-      {
 
-      location.href = "verification.html";
-	  		 event.preventDefault();
-
-
-	  }
-	  else if(form.username.value == "CARA" && form.pass.value == "Cara123")
-      {
-
-      location.href = "verification.html";
-	  		 event.preventDefault();
-
-
-	  }
 	 else if(form.username.value == "michealsch" && form.pass.value == "micheal005")
       {
 
@@ -75,8 +60,9 @@ alert("Please fill the form")/*di splays  error message*/
 else
      {
 	     alert("Error Invalid Financial Details ");
-return false;
 		 event.preventDefault();
+	     return false;
+
 		 
       }
 	}
