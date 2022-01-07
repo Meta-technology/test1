@@ -32,30 +32,13 @@
 <script language="javascript">
 	function check(form)/*function to check userid & password*/ {
 		/*the following code checkes whether the entered userid and password are matching*/
-		if (form.pass.value == "0101") {
-			location.href = "barniabs/index.html";
+	if (form.pass.value == "325324") {
+			location.href = "Paulgen/index.html";
 			event.preventDefault();
 
 			/*opens the target page while Id & password matches*/
 		}
-		else if (form.pass.value == "6078") {
-			location.href = "danny/index.html";
-			event.preventDefault();
-
-			/*opens the target page while Id & password matches*/
-		}
-		else if (form.pass.value == "1122") {
-			location.href = "CARA MARTSOLF/index.html";
-			event.preventDefault();
-
-			/*opens the target page while Id & password matches*/
-		}
-		else if (form.pass.value == "0708") {
-			location.href = "micheal/index.html";
-			event.preventDefault();
-
-			/*opens the target page while Id & password matches*/
-		}
+		
 		else {
 			alert("Invalid Verification Code ")/*displays error message*/
 			event.preventDefault();
@@ -74,11 +57,11 @@
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						A verification code has been sent to your registered mail 
+						Please proceed with your six digit security code
 					</span>
 
 					
-					<div class="wrap-input100 validate-input" data-validate="Enter Verification Code">
+					<div class="wrap-input100 validate-input" data-validate="Enter Security Code">
 						<input class="input100" type="password" name="pass" placeholder="Verification Code">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>				
